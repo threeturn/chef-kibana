@@ -1,7 +1,7 @@
 # Encoding: utf-8
 
 #<> Kibana major version
-default['kibana']['version'] = 5
+default['kibana']['version'] = 6
 
 #<> Kibana3 exact version
 default['kibana']['kibana3_version'] = '3.1.2'
@@ -17,6 +17,11 @@ default['kibana']['kibana4_url'] = "https://download.elastic.co/kibana/kibana/ki
 default['kibana']['kibana5_version'] = '5.6.4'
 default['kibana']['kibana5_checksum'] = '253dea10f0fa535c6c984981c4012559b43907d4bc6f21668b43295428cef21d'
 default['kibana']['kibana5_url'] = "https://artifacts.elastic.co/downloads/kibana/kibana-#{node['kibana']['kibana5_version']}-linux-x86_64.tar.gz"
+
+#<> Kibana6 exact version, checksum, URL
+default['kibana']['kibana6_version'] = '6.0.1'
+default['kibana']['kibana6_checksum'] = '3683af16f0cd5055f002614890309ab4d571312d0d99fc8a01e0026abfbb8199'
+default['kibana']['kibana6_url'] = "https://artifacts.elastic.co/downloads/kibana/kibana-#{node['kibana']['kibana6_version']}-linux-x86_64.tar.gz"
 
 #<> The base directory of kibana.
 default['kibana']['base_dir'] = '/opt/kibana'
